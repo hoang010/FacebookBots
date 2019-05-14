@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a14b06ec-6fd0-415e-be2f-cbd963b341df</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>WebDriverTesting.py</StartupFile>
+    <StartupFile>BotCreator.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,20 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BotCreator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BotDataGenerator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testModule.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="WebDriverTesting.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccountDetails.txt" />
+    <Content Include="NewBots.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
