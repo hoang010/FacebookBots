@@ -47,4 +47,5 @@ driver.implicitly_wait(10)
 elem = driver.find_element_by_css_selector("button._42ft._4jy0.layerConfirm._2rsa.uiOverlayButton._4jy3._4jy1.selected._51sy")
 elem.click()
 
-
+elem = driver.find_element_by_css_selector("button._42ft._4jy0._4jy4._517h._51sy.mls")
+elem.click()
